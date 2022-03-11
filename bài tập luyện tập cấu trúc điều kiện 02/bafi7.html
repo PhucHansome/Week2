@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("nhập giá trị a trong phương trình ax^2 +bx + c = 0"));
+        var b = parseFloat(prompt("nhập giá trị b trong phương trình ax^2 + bx + c = 0"));
+        var c = parseFloat(prompt("Nhập giá trị c trong phương trình ax^2 + bx + c = 0"));
+        A = (b*b)-(4*(a*c));
+        if (A > 0){ 
+            var x1 = ((-b) + Math.sqrt(A))/(2*a);
+            var x2 = ((-b) - Math.sqrt(A))/(2*a);  
+            alert("phương trình tồn tại 2 nghiệm là: x1= "+ x1 +"x2 = "+ x2 );
+        }
+        if (A<0){
+            alert("phương trình vô nghiệm");
+        }
+        else{    
+            var x = (-b)/(a*2); 
+            alert("phương trình có nghiệm kép là: "+ x); 
+        }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sokw = parseFloat(prompt("Nhập vào số chữ điện bạn sử dụng(kWh): "));
+            sotienthanhtoan1 = sokw*2.927;
+            sotienthanhtoan2 = sokw*2.834;
+            sotienthanhtoan3 = sokw*2.536;
+            sotienthanhtoan4 = sokw*2.014;
+            sotienthanhtoan5 = sokw*1.734;
+            sotienthanhtoan6 = sokw*1.678;
+            if (sokw > 401){
+                alert("số tiền phải thanh toán là: " + sotienthanhtoan1+"VNĐ"); 
+            }else if (301> sokw && sokw >= 400 ){
+                alert("số tiền phải thanh toán là: "+ sotienthanhtoan2 + "VNĐ");
+            }else if(201 > sokw && sokw >= 300){
+                alert("số tiền phải thanh toán là: " + sotienthanhtoan3 + "VNĐ");
+            }else if(101 > sokw && sokw >= 200){
+                alert("số tiền phải thanh toán là: " + sotienthanhtoan5 +"VNĐ");
+            }else if(0 > sokw && sokw >= 100){
+                alert("số tiền phải thanh toán là "+ sotienthanhtoan6+ "VNĐ");
+            }else{
+                alert("sai cú pháp");
+            }
+    </script>
+</body>
+</html>

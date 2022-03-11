@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tienluong = parseFloat(prompt("Tiền lương/năm của bạn là (triệu VNĐ):"));
+        var thuethunhapcanhan1= tienluong*0.05;
+        var thuethunhapcanhan2= tienluong*0.10;
+        var thuethunhapcanhan3= tienluong*0.15;
+        var thuethunhapcanhan4= tienluong*0.20;
+        var thuethunhapcanhan5= tienluong*0.25;
+        if(tienluong => 385){
+            alert("vậy thuế thu nhập cá nhân của bạn là 25% và số tiền bạn phải thanh toán là: "+ thuethunhapcanhan5 + "Triệu VNĐ");
+        }else if(tienluong <= 384){
+
+            alert("vậy thuế thu nhập cá nhân của bạn là 20% và số tiền bạn phải thanh toán là: "+ thuethunhapcanhan4+"Triệu VNĐ");
+        }else if(tienluong >= 216 && tienluong < 121){
+            
+            alert("vậy thuế thu nhập cá nhân của bạn là 15% và số tiền bạn phải thanh toán là: "+ thuethunhapcanhan3+"Triệu VNĐ");
+        }else if(tienluong >=120 && tienluong <61){
+            
+            alert("vậy thuế thu nhập cá nhân của bạn là 10% và số tiền bạn phải thanh toán là: "+thuethunhapcanhan2+"Triệu VNĐ");
+        }else if(tienluong >=60&& tienluong > 0){
+            
+            alert("vậy thuế thu nhập cá nhân của bạn là 5% và số tiền bạn phải thanh toán là: " + thuethunhapcanhan1+"Triệu VNĐ");
+        } else{
+            alert("Sai cú pháp");
+        }
+    </script>
+</body>
+</html>
