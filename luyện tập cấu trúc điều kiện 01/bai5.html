@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt("bài kiểm tra (0->10): "));
+        var b = parseFloat(prompt("điểm thi giữa kì (0-> 10): "));
+        var c = parseFloat(prompt("điểm thi cuối kì (0-> 10):"));
+            total = (a + (b*2) + (c*3))/6;
+        if (total >= 8  && total < 11){
+            alert(total +" Điểm: là học sinh giỏi");
+        }else if(total < 8 && total >= 6.5){
+            alert(total + " Điểm: là học sinh khá");
+        }else if (total < 6.5 && total >= 5){
+            alert(total + " Điểm là học sinh trung bình");
+        }else if (total < 5 && total >= 3.5){
+            alert(total + " Điểm là học sinh yếu");
+        }else if (total >= 0 && 3.5 > total ){
+            alert(total + " Điểm là học sinh kém");
+        }else{
+            alert("nhập sai cú pháp or nhập sai điểm");
+        }
+    </script>
+</body>
+</html>

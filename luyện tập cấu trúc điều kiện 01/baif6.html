@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var phantramhoahong = parseInt(prompt("nhập số sản phẩm bạn muốn nhập ở công ty chúng tôi: "));
+            if (phantramhoahong > 0 && phantramhoahong < 100){
+                alert(phantramhoahong + " phần trăm hoa hồng nhận được là 3% theo mỗi sản phẩm");
+            } else if (phantramhoahong >= 100 && phantramhoahong <500){
+                alert(phantramhoahong + " phần trăm hoa hồng nhận được là 5% giá trị mỗi sản phẩm");
+            }else if(phantramhoahong > 500){
+                alert(phantramhoahong + " phần trăm hoa hồng sản phẩm nhận dược là 10% giá trị mỗi sản phẩm");
+            }else {
+                alert("Sai cú pháp")
+            }
+    </script>
+</body>
+</html>
